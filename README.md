@@ -37,7 +37,6 @@ C >> 72000000 bits
 Output file successfully saved to: output.png
 ```
 
-| Image 1 | Image 2 |
-| :---: | :---: |
 | Before | After |
+| :---: | :---: |
 | ![input](./image.png) | ![Output](output.png) |
