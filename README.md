@@ -39,4 +39,4 @@ Output file successfully saved to: output.png
 
 | Before | After |
 | :---: | :---: |
-| ![input](./image.png) | ![Output](output.png) |
+| ![input](./assets/image.png) | ![Output](./assets/output.png) |
