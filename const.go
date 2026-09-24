@@ -8,7 +8,7 @@ import (
 var asciiLogo string
 
 const (
-	version = "1.1.0"
+	version = "1.1.1"
 
 	styleBold      = "\033[1m"
 	styleItalic    = "\033[3m"

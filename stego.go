@@ -21,7 +21,7 @@ func hideInImage(input image.Image, message string, outputPath string) {
 		os.Exit(1)
 	}
 
-	fmt.Printf("X >> %d px\nY >> %d px\nC(лише для непрозорих зображень) >> %d bits\n", x, y, capacity)
+	fmt.Printf("X >> %d px\nY >> %d px\nC >> %d bits\n^^(лише для непрозорих зображень)\n", x, y, capacity)
 
 	var bits []uint8
 	for _, b := range msgBytes {
@@ -87,9 +87,6 @@ func extractFromImage(input image.Image) string {
 			channels := []uint8{c.R, c.G, c.B}
 
 			for _, ch := range channels {
-				// 1. (ch & 1) витягує найменш значущий біт (LSB) з каналу
-				// 2. (currentByte << 1) зсуває вже зібрані біти вліво
-				// 3. | додає новий біт у кінець
 				currentByte = (currentByte << 1) | (ch & 1)
 				bitCount++
 
